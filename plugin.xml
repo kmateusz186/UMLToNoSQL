@@ -1,0 +1,22 @@
+<plugin
+        id="umltonosqlplugin"
+        name="UML to NoSQL"
+        description="UML to NoSQL Transformation"
+        provider="Visual Paradigm"
+        class="umltonosqlplugin.UMLToNoSQL">
+
+    <actionSets>
+        <actionSet id="umltonosqlplugin.ActionSet">
+            <action
+                    id="umltonosqlplugin.actions.ActionController"
+                    actionType="generalAction"
+                    label="Generate NoSQL model"
+                    tooltip="Generate NoSQL .json files, based on a UML Class Diagrams"
+                    style="normal"
+                    icon="icons/storage.png"
+                    menuPath="Tools/Document">
+                <actionController class="umltonosqlplugin.actions.ActionController"/>
+            </action>
+        </actionSet>
+    </actionSets>
+</plugin>
